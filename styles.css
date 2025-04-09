@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 1rem;
     box-sizing: border-box;
 }
 
@@ -71,5 +71,135 @@ body {
     padding: 2rem 4rem;
     grid-area: main_body;
     background-color: linen;
+    flex-direction: column;
 }
 
+.home_header {
+    font-size: 3.5rem;
+}
+
+.imageWText_home {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.content_image_gelb {
+    max-width: 50vh;
+    height: auto;
+}
+
+.content_text {
+    width: 100%;
+    font-size: 2rem;
+    flex: 1;
+}
+
+.textWButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.buttonByText {
+    min-width: 7vw;
+    min-height: 4vh;
+    background: white;
+    border: 2px solid black;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 1.5rem;
+}
+
+.buttonByText:hover {
+    background: black;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.buttonByText:active {
+    transform: scale(0.95);
+}
+
+.imageWText_home:nth-of-type(2) {
+    position: relative;
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+  }
+  
+  .content_image_grun {
+    width: 100%;
+    height: 60vh;
+    object-fit:fill;
+    display: block;
+  }
+  
+  .imageWText_home:nth-of-type(2) .textWButton {
+    position: absolute;
+    top: 50%;
+    left: 4rem;
+    transform: translateY(-50%);
+    max-width: 70%;
+    background: rgba(255, 255, 255, 0);
+    padding: 2rem;
+    text-align: left;
+  }
+  
+  .imageWText_home:nth-of-type(2) .buttonByText {
+    display: block;
+    margin: 1rem auto 0;
+    min-width: 7vw;
+    min-height: 4vh;
+  }
+
+  .imageWText_home:nth-of-type(2) .home_header {
+    text-align: left;
+    width: 100%;
+  }
+
+  .imageWText_home:nth-of-type(3) {
+    position: relative;
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+  }
+  
+  .content_image_lila {
+    width: 40%;
+    height: 40vh;
+    object-fit:fill;
+    display: block;
+  }
+  
+  .imageWText_home:nth-of-type(3) .textWButton {
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    transform: none;
+    max-width: 70%;
+    background: rgba(255, 255, 255, 0);
+    padding: 2rem;
+    text-align: left;
+  }
+  
+  .imageWText_home:nth-of-type(3) .buttonByText {
+    display: block;
+    margin: 1rem auto 0;
+    min-width: 7vw;
+    min-height: 4vh;
+  }
+
+  .imageWText_home:nth-of-type(3) .home_header {
+    text-align: left;
+    width: 100%;
+    margin-left: 55vw;
+    padding-right: 33vw;
+    font-style: italic;
+  }
+
+  .imageWText_home:nth-of-type(3) .content_text {
+  margin-top: 5vh;
+}
